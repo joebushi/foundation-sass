@@ -1,10 +1,7 @@
-// CSS for jQuery Orbit Plugin 1.4.0 - http://www.zurb.com/playground
-// Copyright 2010, ZURB - Free to use under the MIT license - http://www.opensource.org/licenses/mit-license.php
-//
-// Configure the slider ID by setting $orbit-slider-id
-
-// Orbit Slider
-//----------------------------------------------------------------------------------------------------
+// CSS for jQuery Orbit Plugin 1.4.0
+// Maintained for Foundation. foundation.zurb.com
+// Free to use under the MIT license.
+// http://www.opensource.org/licenses/mit-license.php
 
 // Orbit slider mixin
 @mixin orbit-slider($width: 940px, $height: 450px)
@@ -20,7 +17,7 @@
     @include orbit-slider()
 
 // Orbit container
-//----------------------------------------------------------------------------------------------------
+//-------------------------------------------------
 
 div.orbit-wrapper
   width: 1px
@@ -46,11 +43,10 @@ div.orbit
     width: 100%
     height: 100%
 
-// Orbit timer
-//----------------------------------------------------------------------------------------------------
-//
-// If your slider only uses content or anchors, you're going to want to put the width and height
-// declarations on the .orbit > div and div.orbit > a tags in addition to just the .orbit-wrapper
+// If your slider only uses content or anchors, you're going to want to put the width and height declarations on the .orbit > div and div.orbit > a tags in addition to just the .orbit-wrapper
+
+// Timer
+//--------------------------------------------------
 div.orbit-wrapper
   div.timer
     width: 40px
@@ -97,12 +93,12 @@ div.orbit-wrapper
     z-index: 4
     +opacity(0)
     &.active
-      background: image-url('orbit/pause-black.png') no-repeat 0 -40
+      background: image-url('orbit/pause-black.png') no-repeat 0 -40px
   div.timer:hover span.pause, span.pause.active
     +opacity(1)
 
 // Orbit captions
-//----------------------------------------------------------------------------------------------------
+//-------------------------------------------------
 
 .orbit-caption
   display: none
@@ -121,7 +117,7 @@ div.orbit-wrapper
   width: 100%
 
 // Directional Nav
-//----------------------------------------------------------------------------------------------------
+//----------------------------------------------------
 
 div.orbit-wrapper
   div.slider-nav
@@ -143,7 +139,7 @@ div.orbit-wrapper
         left: 0
 
 // Bullet Nav
-//----------------------------------------------------------------------------------------------------
+//--------------------------------------------------
 
 ul.orbit-bullets
   position: absolute
@@ -178,15 +174,15 @@ ul.orbit-bullets
 // Fluid Layout
 //-------------------------------------------------------------------------------------
 
-.orbit .fluid-placeholder
+div.orbit img.fluid-placeholder
   visibility: hidden
   position: static
   display: block
   width: 100%
-.orbit, .orbit-wrapper
+div.orbit, div.orbit-wrapper
   width: 100% !important
 
-.orbit-bullets
+ul.orbit-bullets
   position: absolute
   z-index: 30
   list-style: none
