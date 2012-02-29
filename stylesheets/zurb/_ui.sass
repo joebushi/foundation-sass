@@ -201,8 +201,9 @@ dl.tabs.vertical dd a
         top: 0
         height: auto
     &:first-child
-      &a.active
-        margin: 0
+      a
+        &.active
+          margin: 0
 
 ul.tabs-content
   margin: 0
@@ -507,7 +508,7 @@ p.vevent abbr
     left: 10px
   &.tip-override>.nub
     border-color: transparent transparent rgb(0,0,0) transparent !important
-    border-color: transparent transparent rgba(0,0,0) transparent !important
+    border-color: transparent transparent rgba(0,0,0, 0.8) transparent !important
     top: -10px !important
   &.tip-top>.nub
     border-color: rgb(0,0,0) transparent transparent transparent
