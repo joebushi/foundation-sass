@@ -3,19 +3,6 @@
 // Free to use under the MIT license.
 // http://www.opensource.org/licenses/mit-license.php
 
-// Orbit slider mixin
-@mixin orbit-slider($width: 940px, $height: 450px)
-  width: $width
-  height: $height
-  background: #000 image-url('orbit/loading.gif') no-repeat center center
-  overflow: hidden
-  & > img, & > div, & > a
-    display: none
-
-@if $include-default-orbit-slider-id
-  ##{$orbit-slider-id}
-    @include orbit-slider()
-
 // Orbit container
 //-------------------------------------------------
 
