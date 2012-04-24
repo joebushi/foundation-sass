@@ -4,6 +4,6 @@ Compass::Frameworks.register("ZURB-foundation", :path => File.join(File.dirname(
 module ZURBfoundation
   
   VERSION = "2.2.1"
-  DATE = "2012-24-04"
+  DATE = "2012-04-24"
 
 end

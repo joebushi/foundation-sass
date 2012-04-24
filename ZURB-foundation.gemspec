@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
-  s.add_dependency("compass", [">= 0.11.5"])
+  s.add_dependency("compass", [">= 0.12.1"])
 end
